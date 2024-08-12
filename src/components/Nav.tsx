@@ -7,7 +7,7 @@ const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="padding-x py-8 z-10 w-full relative shadow-md">
+    <header className="padding-x py-8 z-20 w-full absolute">
       <nav className="flex justify-between items-center max-container">
         <a href="/" className="px-3 py-2">
           <img src={headerLogo} alt="Nike Logo" width={130} height={29} />
@@ -24,7 +24,10 @@ const Nav = () => {
             </li>
           ))}
         </ul>
-        <button className="lg:hidden px-3 py-2" onClick={() => setIsMenuOpen((prev) => !prev)}>
+        <button
+          className="lg:hidden px-3 py-2"
+          onClick={() => setIsMenuOpen((prev) => !prev)}
+        >
           <img src={hamburger} alt="Hamburger" width={25} height={25} />
         </button>
       </nav>
