@@ -1,5 +1,5 @@
 import { Nav } from './components';
-import { Hero, PopularProducts, Services, SpecialOffer, SuperQuality } from './sections';
+import { CustomerReviews, Hero, PopularProducts, Services, SpecialOffer, Subscribe, SuperQuality } from './sections';
 
 export default function App() {
   return (
@@ -19,6 +19,12 @@ export default function App() {
       </section>
       <section className="padding">
         <SpecialOffer />
+      </section>
+      <section className="bg-pale-blue padding">
+        <CustomerReviews />
+      </section>
+      <section className="padding">
+        <Subscribe />
       </section>
     </main>
   );
