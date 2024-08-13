@@ -1,5 +1,14 @@
 import { Nav } from './components';
-import { CustomerReviews, Hero, PopularProducts, Services, SpecialOffer, Subscribe, SuperQuality } from './sections';
+import {
+  CustomerReviews,
+  Footer,
+  Hero,
+  PopularProducts,
+  Services,
+  SpecialOffer,
+  Subscribe,
+  SuperQuality,
+} from './sections';
 
 export default function App() {
   return (
@@ -25,6 +34,9 @@ export default function App() {
       </section>
       <section className="padding">
         <Subscribe />
+      </section>
+      <section className="bg-black padding-x padding-t pb-8">
+        <Footer />
       </section>
     </main>
   );
