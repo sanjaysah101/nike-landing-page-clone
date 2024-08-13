@@ -1,5 +1,5 @@
 import { Nav } from './components';
-import Hero from './sections/Hero';
+import { Hero, PopularProducts } from './sections';
 
 export default function App() {
   return (
@@ -7,6 +7,9 @@ export default function App() {
       <Nav />
       <section className="xl:padding-l wide:padding-r padding-b">
         <Hero />
+      </section>
+      <section className="padding">
+        <PopularProducts />
       </section>
     </main>
   );

@@ -20,7 +20,7 @@ const ShoeCard: FC<IShoeCardProps> = ({
 
   return (
     <div
-      className={`border-2 rounded-xl cursor-pointer max-sm:flex-1 ${
+      className={`border-2 rounded-xl cursor-pointer max-sm:flex-1 hover:outline hover:outline-2 hover:outline-coral-red focus-within:outline-coral-red ${
         isSelected ? 'border-coral-red' : 'border-transparent'
       }`}
       onClick={onClick}
