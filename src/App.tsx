@@ -1,5 +1,5 @@
 import { Nav } from './components';
-import { Hero, PopularProducts, Services, SuperQuality } from './sections';
+import { Hero, PopularProducts, Services, SpecialOffer, SuperQuality } from './sections';
 
 export default function App() {
   return (
@@ -16,6 +16,9 @@ export default function App() {
       </section>
       <section className="padding-x py-10">
         <Services />
+      </section>
+      <section className="padding">
+        <SpecialOffer />
       </section>
     </main>
   );
