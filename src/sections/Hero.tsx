@@ -1,8 +1,9 @@
 import { useState } from 'react';
 
 import { shoes, statistics } from '../constants';
-import { Button, ShoeCard } from '../components';
-import { arrowRight } from '../assets/icons';
+import { ShoeCard } from '../components';
+// import { arrowRight } from '../assets/icons';
+import SignInWithGoogle from '../components/SignInWithGoogle';
 
 const Hero = () => {
   const [featuredImage, setFeaturedImage] = useState(shoes[0].featureImage);
@@ -20,7 +21,8 @@ const Hero = () => {
           Discover stylish Nike arrivals, quality comfort, and innovation for your active life.
         </p>
 
-        <Button label="Shop now" iconURL={arrowRight} />
+        {/* <Button label="Shop now" iconURL={arrowRight} /> */}
+        <SignInWithGoogle />
 
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
           {statistics.map(({ value, label }) => (
